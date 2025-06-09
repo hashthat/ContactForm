@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<!--This is the basic html page that is designed as a contact form for the user and template to the developer-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Contact Form</title> <!-- Title of the page that will be displayed in the browser tab -->
+  <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file to make a stylish landing page -->
+</head>
+<body> <!-- Body of the page contains the main properties to the contact form -->
+  <div class="form-container"> <!-- Container for the form to center it and give it a nice look. This field derives from the styles.css file that is linked above -->
+    <h1> Get In Touch</h1> <!-- The main heading of the form. The purpose is for the user to get into touch for a given company. Possibly some tech support!-->
+    <p class="subtitle">Fill out the form below, We'd love to get in touch!.</p> <!-- some human interaction as to what one might do when landing on the page!-->
+
+    <form action="#" method="post">
+      <label for="name">Your Name</label> <!-- fill out your name-->
+      <input type="text" id="name" name="name" required> <!-- the input field for the users name, it is a textbox-->
+
+      <label for="email">Email Address</label> <!-- fill out your email address-->
+      <input type="email" id="email" name="email" required> <!-- the input field for the users email, it is a textbox-->
+
+      <label for="message">Message</label> <!-- fill out your message-->
+      <textarea id="message" name="message" rows="5" required></textarea> <!-- the input field for the users message.-->
+
+      <button type="submit">Send Message</button> <!-- the submit button submits the information. There is a way to send an email!-->
+    </form> <!-- closing the form through an escape character-->
+  </div> <!-- closing the form container through an escape character-->
+</body> <!-- closing the body of the page through an escape character-->
+</html> <!-- closing the html page through an escape character-->

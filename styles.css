@@ -1,0 +1,70 @@
+  body {
+  background-image: url('IMG_8314.jpg');
+  background-position: center; /* Image gets centered and then repeats*/
+  background-size: contain; 
+  /*background-repeat: repeat; */ /* This line is commented out -- I'm not sure if I want the background to repeat or not */
+  font-family: Arial, sans-serif; /* The font-family is Arial, sans-serif. I like the look of it. */
+  display: flex; /* a flex container allows easy centering to the form */
+  justify-content: center; /* This centers the form horizontally */
+  align-items: center; /* This centers the form vertically */
+  min-height: 100vh; /* the body takes up the full height of the viewport */
+  margin: 0; /* removeing default margin */
+  padding: 20px; /* padding for the views */
+} /* The body utilizes the image I uploaded from my phone. Aligned, Repeats, and creates a unique background.*/ 
+
+.form-container { /* The container for the form seems to hover over the background */
+  background: white; /* white background for the container */
+  border-radius: 8px; /* rounded corners for the container */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
+  padding: 30px; /* padding for the container */
+  width: 100%; /* full width of the container */
+  max-width: 500px; /* Containers width */
+}
+
+h1 { /* TITLE*/
+  text-align: center; /*Centered Text*/
+  color: #333; /* Text Color */
+  margin-bottom: 10px; /* Margin at the bottom of the title */
+}
+
+.subtitle { /* Subtitle */
+  text-align: center; /* Centered Text */
+  color: #666; /* Color for Subtitle same as h1 */
+  margin-bottom: 20px; /*creating space*/
+}
+
+form { /* The form itself */
+  display: flex; /* Flexbox for layout */
+  flex-direction: column; /* Stacking the elements of the form vertically*/
+}
+
+label { /* Labels for the form */
+  margin-bottom: 8px; /* margin at the bottom of the label*/
+  color: #555; /* color similar to h1 and subtitle */
+}
+
+input, textarea { /* Input fields and text areas of the form*/
+  padding: 10px; /* the padding for input fields and text*/
+  margin-bottom: 15px; /* margins at the bottom of the text areas for asthetics. */
+  border: 1px solid #ddd; /* keeping the border subtle to the rest of the page.*/
+  border-radius: 5px; /* creates the soft corners of the textboxes. Friendly feel*/
+}
+
+textarea { /* The message area/box */
+  resize: vertical; /* resizes with text!~*/
+  min-height: 100px; /* minimum height for the message area */
+}
+
+button { /* SUBMIT!*/
+  background: #5550af; /* A nice purple color for the button */
+  color: white; /* white text to read with */
+  border: none; /* no border */
+  padding: 12px; /* padding for the button */
+  border-radius: 5px; /* rounded corners for the button */
+  cursor: pointer; /* when the cursor hovers over the button it changes for the user.*/
+  font-size: 16px; /* font size for the button */
+}
+
+button:hover {
+  background: #3228e6; /* Darker purple on hover */
+}
